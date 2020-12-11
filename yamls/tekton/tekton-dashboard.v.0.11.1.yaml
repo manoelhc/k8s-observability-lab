@@ -382,7 +382,7 @@ spec:
             - --triggers-namespace=tekton-pipelines
             - --read-only=false
             - --csrf-secure-cookie=false
-            - --log-level=info
+            - --log-level=debug
             - --log-format=json
             - --namespace=
             - --openshift=false
@@ -410,8 +410,6 @@ spec:
         runAsUser: 65532
       serviceAccountName: tekton-dashboard
       volumes: []
-
----
 
 ---
 apiVersion: rbac.authorization.k8s.io/v1
