@@ -386,7 +386,7 @@ spec:
             - --log-format=json
             - --namespace=
             - --openshift=false
-            - --stream-logs=false
+            - --stream-logs=true
             - --external-logs=
           env:
             - name: INSTALLED_NAMESPACE
