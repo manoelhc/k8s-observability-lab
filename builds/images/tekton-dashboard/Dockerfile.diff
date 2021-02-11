@@ -1,0 +1,11 @@
+--- Dockerfile	2020-12-11 13:43:55.000000000 +0000
++++ Dockerfile.new	2020-12-11 13:55:14.000000000 +0000
+@@ -13,6 +13,8 @@
+ USER root
+ WORKDIR /go/src/github.com/tektoncd/dashboard
+ COPY . .
++RUN apk add python3
++RUN apk add build-base
+ RUN npm install
+ RUN npm run bootstrap:ci
+ RUN npm run build
